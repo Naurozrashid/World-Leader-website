@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# World Leader Club
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+live site link (https://world-leader-club.netlify.app/)
 
-## Available Scripts
+## You can create club
 
-In the project directory, you can run:
+  -> 
 
 ### `npm start`
 

@@ -1,26 +1,25 @@
 import React from 'react';
+import './Leader.css'
 
 const Leader = (props) => {
     const { name,img,role,age,country,salary } = props.leader;
-    const imgStyle={
-      width: '159px',
-      heigth: '172px'
-    }
+    
  
     return (
       
            
-           <div class="col">
-    <div class="card h-100">
-      <img style={imgStyle} src={img} class="card-img-top rounded-circle mx-auto d-block" alt="..."/>
-      <div class="card-body text-center">
-        <h5 class="card-title">Name:{name}</h5>
-        <p class="card-text">
-            <h5>Role: {role}</h5>
-            <h5>Age: {age}</h5>
-            <h5>Country: {country}</h5>
-            <h5>Salary: ${salary}</h5>
-        </p>
+           <div className="col">
+    <div className="card h-100 cardStyle text-white">
+      <img style={{height:'14rem',width:'15rem'}} src={img} className="card-img-top rounded-circle mx-auto" alt="..."/>
+      <div className="card-body text-center">
+        <h5 className="card-title">Name: <span>{name}</span></h5>
+          <h4>Role: <span>{role}</span></h4>
+            <h4>Age: <span>{age}</span></h4>
+            <h4>Country: <span>{country}</span></h4>
+            <h4>Donation: <span>${salary}</span></h4>
+    
+        <button onClick={() => props.handleAddToCart(props.leader)}
+         className="btnStylemain fw-bold "><i class="fas fa-cart-plus"></i> Add To Club</button>
       </div>
     </div>
     </div>
