@@ -2,9 +2,10 @@
 
 live site link (https://world-leader-club.netlify.app/)
 
-## You can create club
+## Purpose of this project
 
-  -> 
+  -> (you can create a world leaders club)
+  
 
 ### `npm start`
 
